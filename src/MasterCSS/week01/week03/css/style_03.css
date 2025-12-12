@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body 基本樣式與 Box-sizing 設定 */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  box-sizing: border-box; /* 確保 padding 和 border 計入寬高 */
+}
+
+/* Border 範例區塊樣式 */
+.border-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Border 範例子元素基礎樣式 */
+.border-examples > div {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+/* 簡單邊框 */
+.simple-border {
+  border: 2px solid #007bff;
+}
+
+/* 虛線邊框 */
+.dashed-border {
+  border: 3px dashed #28a745;
+}
+
+/* 圓角邊框 */
+.rounded-border {
+  border: 2px solid #ffc107;
+  border-radius: 12px;
+}
+
+/* 強調邊框 (只顯示左邊) */
+.accent-border {
+  border: none;
+  border-left: 5px solid #dc3545;
+  background-color: #fff5f5;
+}
+
+/* 漸層邊框 */
+.gradient-border {
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #007bff, #28a745) 1;
+  border-radius: 8px;
+}
+
+
+/* Card 元件樣式 */
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px; /* 統一的內距 */
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0; /* 移除預設的上外距 */
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.card p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Button 樣式 */
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* 按鈕的內距 */
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+  <title>CSS Internal stylesheet</title>
+  <style>
+      h1 {
+          color: red;
+          font-size: 28px;
+      }
+      p {
+          color: blue;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+      #special {
+        color: purple;
+        font-style: italic;
+      }
+      xyz{
+        color: orange;
+        background-color: blue;
+        font-size: 20px;
+        border: 2px dashed brown;
+        padding: 5px;
+        display: block;
+        width: fit-content;
+      }
+  </style>
+ </head>    
+ <body>
+  <h1>CSS Inline Style</h1>
+  <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Ratione,
+      distinctio recusandae ad aperiam blanditiis fugiat
+      corrupti et iusto quod
+      culpa sed non hic saepe iste aliquam quia minus, nobis
+      praesentium?
+    </p>
+    <p class="highlight">
+      Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Ratione,
+      distinctio recusandae ad aperiam blanditiis fugiat
+      corrupti et iusto quod
+      culpa sed non hic saepe iste aliquam quia minus, nobis
+      praesentium?
+    </p>
+    <xyz>
+        This is a custom element styled with internal CSS.
+    </xyz>
+  </body>
+</html>

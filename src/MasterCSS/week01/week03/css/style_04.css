@@ -1,0 +1,140 @@
+/* -------------------- 通用設置與重置 -------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  box-sizing: border-box; /* 確保 padding 和 border 計入寬高 */
+}
+
+
+/* -------------------- 布局 (.layout-example) 樣式 -------------------- */
+.layout-example {
+  max-width: 1200px;
+  margin: 0 auto; /* 整體置中 */
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  margin-bottom: 30px; /* 與主要內容的距離 */
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  gap: 30px; /* 使用 gap 避免 margin 問題 */
+  margin-bottom: 30px;
+}
+
+.article {
+  flex: 2; /* 佔用較大的空間 (例如 2/3) */
+}
+
+.article h2 {
+  margin-top: 0; /* 移除預設上外距 */
+  margin-bottom: 20px;
+}
+
+.article p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.article p:last-child {
+  margin-bottom: 0; /* 最後一個段落不需要下外距 */
+}
+
+.sidebar {
+  flex: 1; /* 佔用較小的空間 (例如 1/3) */
+  background-color: #e9ecef;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #6c757d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* -------------------- Card 卡片範例樣式 -------------------- */
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px; /* 統一的內距 */
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0; /* 移除預設的上外距 */
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.card p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* 按鈕的內距 */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* -------------------- Border 邊框範例樣式 -------------------- */
+.border-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.border-examples > div {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.simple-border {
+  border: 2px solid #007bff;
+}
+
+.dashed-border {
+  border: 3px dashed #28a745;
+}
+
+.rounded-border {
+  border: 2px solid #ffc107;
+  border-radius: 12px;
+}
+
+.accent-border {
+  border: none;
+  border-left: 5px solid #dc3545;
+  background-color: #fff5f5;
+}
+
+.gradient-border {
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #007bff, #28a745) 1;
+  border-radius: 8px;
+}

@@ -1,0 +1,12 @@
+.center-both {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #f8f9fa;
+}
+
+.tall { height: 80px;
+background-color: green; }
+.short { height: 40px;
+background-color: orange; }
